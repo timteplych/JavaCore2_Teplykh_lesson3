@@ -7,15 +7,12 @@ import java.util.LinkedList;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        String[] masStr = {"Moscow","London", "New York", "Madrid", "Prague", "Berlin","Chicago","London","Milano","New York","Barcelona","Prague"};
+public class App {
+    public static void main(String[] args) {
+        String[] masStr = {"Moscow", "London", "New York", "Madrid", "Prague", "Berlin", "Chicago", "London", "Milano", "New York", "Barcelona", "Prague"};
         HashSet<String> cities = new HashSet<>();
-        HashMap<String,Integer> citiesMap = new HashMap<>();
+        HashMap<String, Integer> citiesMap = new HashMap<>();
 
         for (String aMasStr : masStr) {
             cities.add(aMasStr);
@@ -30,11 +27,11 @@ public class App
         System.out.println(citiesMap);
 
         Reference ref = new Reference();
-        ref.add("Ivanov","254-23-57");
-        ref.add("Ivanov","254-23-57");
-        ref.add("Petrov","544-22-14");
-        ref.add("Petrov","544-22-15");
-        ref.add(null,"0000000000");
+        ref.add("Ivanov", "254-23-57");
+        ref.add("Ivanov", "254-23-57");
+        ref.add("Petrov", "544-22-14");
+        ref.add("Petrov", "544-22-15");
+        ref.add(null, "0000000000");
 
         System.out.println(ref.get("Petrov"));
         System.out.println(ref.get("Sidorov"));
